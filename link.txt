@@ -1,1 +1,1 @@
-After uploading this folder to GitHub Pages, paste the public portfolio URL here. Example: https://ahmed3103.github.io/portfolio/
+https://ahmeddessouky.github.io/WBS-Mini-Project/
