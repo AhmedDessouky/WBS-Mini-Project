@@ -1,6 +1,6 @@
 AI-Assisted Portfolio Webpage Development By:
 
-- Ahmed Eldesouky — 900211891
+- Ahmed El Dessouky — 900211891
 - Amr Eltoukhy — 900211934
 - Ahmed Elbarbary — 900213964
 - Ahmed Almorr — 900212680
