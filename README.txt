@@ -1,4 +1,9 @@
-Ahmed El Dessouky - AI-Assisted Portfolio Webpage Development
+AI-Assisted Portfolio Webpage Development By:
+
+- Ahmed Eldesouky — 900211891
+- Amr Eltoukhy — 900211934
+- Ahmed Elbarbary — 900213964
+- Ahmed Almorr — 900212680
 
 Open index.html in a browser to test locally.
 Upload all files and folders to GitHub Pages, Netlify, or another static hosting service.
