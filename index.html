@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed El Dessouky portfolio and online CV." />
+  <title>Ahmed El Dessouky | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="Ahmed El Dessouky home">AE</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark Mode</button>
+      </div>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-card profile-card">
+        <img src="assets/profile.png" alt="Ahmed El Dessouky profile photo" class="profile-photo" />
+        <div class="status-pill">Computer Engineer</div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Portfolio / Online CV</p>
+        <h1>Ahmed<br><span>El Dessouky</span></h1>
+        <p class="subtitle">Computer Engineering student with experience in software development, embedded systems, AI, IT audit, and large-scale student leadership.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="assets/Ahmed_El_Dessouky_CV.docx" class="btn secondary" download>Download CV</a>
+        </div>
+        <div class="quick-info" aria-label="Quick highlights">
+          <div><strong>2026</strong><span>Expected Graduation</span></div>
+          <div><strong>AUC</strong><span>Computer Engineering</span></div>
+          <div><strong>AI + IoT</strong><span>Thesis Focus</span></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section two-column reveal" id="about">
+      <div>
+        <p class="eyebrow">About Me</p>
+        <h2>Balanced technical knowledge and leadership experience.</h2>
+      </div>
+      <div class="text-card">
+        <p id="longAbout">Passionate computer engineer with a strong foundation in software development, embedded systems, and digital design. I have also gained extensive extracurricular leadership experience through multiple roles in the AUC Student Union, developing skills in event management, production, procurement, budgeting, fundraising, negotiation, crisis management, and team leadership.</p>
+        <button class="inline-btn" id="aboutToggle" type="button">Show shorter version</button>
+        <p class="short-about hidden" id="shortAbout">Computer Engineering student focused on building practical technical solutions while leading teams and managing large-scale student events.</p>
+      </div>
+    </section>
+
+    <section class="section split reveal">
+      <div class="panel">
+        <h2>Education</h2>
+        <div class="timeline-item">
+          <span class="year">June 2026</span>
+          <h3>Bachelor of Sciences in Computer Engineering</h3>
+          <p class="accent">The American University in Cairo</p>
+          <p>Relevant coursework includes Machine Learning, Cybersecurity, Distributed Systems, software development, digital design, embedded systems, and advanced algorithms.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2020 - 2021</span>
+          <h3>A-Levels</h3>
+          <p class="accent">Modern English School Cairo</p>
+          <p>Computer Science (A*) • Physics (A*)</p>
+        </div>
+      </div>
+
+      <div class="panel skills-panel">
+        <h2>Skills</h2>
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <div class="tags"><span>C++</span><span>C</span><span>Python</span><span>Rust</span><span>Arduino</span><span>VHDL</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Professional</h3>
+          <div class="tags"><span>Leadership</span><span>Problem Solving</span><span>Teamwork</span><span>Project Management</span><span>Budgeting</span><span>Negotiation</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Professional Experience</h2>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card"><span>2025</span><h3>Artificial Intelligence Team Intern</h3><p class="accent">E&amp;</p><p>Working on AI initiatives and implementations.</p></article>
+        <article class="experience-card"><span>2025</span><h3>IT Audit Intern</h3><p class="accent">PwC</p><p>IT audit and compliance assessment.</p></article>
+        <article class="experience-card"><span>2024</span><h3>Event Setup and Management</h3><p class="accent">Perfect Touch Events</p><p>Event coordination and logistics management.</p></article>
+        <article class="experience-card"><span>2024</span><h3>Automation Introduction Intern</h3><p class="accent">Global Technical Services</p><p>Introduction to DCS, PLC, and SCADA systems.</p></article>
+        <article class="experience-card"><span>2023</span><h3>AI and Information Visualization Intern</h3><p class="accent">Teradata</p><p>Introduction to Artificial Intelligence and data visualization.</p></article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-heading project-top">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Selected Technical Work</h2>
+        </div>
+        <div class="project-controls">
+          <input id="projectSearch" class="search-box" type="search" placeholder="Search projects..." aria-label="Search projects" />
+          <div class="filters" id="filters" aria-label="Project filters">
+            <button class="filter active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="hardware" type="button">Hardware</button>
+            <button class="filter" data-filter="software" type="button">Software</button>
+            <button class="filter" data-filter="ai" type="button">AI / Data</button>
+          </div>
+        </div>
+      </div>
+      <p class="results-text" id="projectCount"></p>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section api-section reveal" id="api">
+      <div class="section-heading">
+        <p class="eyebrow">API Integration</p>
+        <h2>Dynamic GitHub Content</h2>
+        <p>This section loads public GitHub repository data using the GitHub REST API. If the API is unavailable or the username has no public repositories, the page displays a clear fallback message instead of breaking.</p>
+      </div>
+      <div class="repo-tools">
+        <input id="githubUser" type="text" value="ahmeddessouky" aria-label="GitHub username" />
+        <button class="btn primary" id="loadRepos" type="button">Load Repos</button>
+        <button class="btn secondary" id="clearRepos" type="button">Clear</button>
+      </div>
+      <div id="repoStatus" class="repo-status" role="status">Click “Load Repos” to fetch public GitHub repositories.</div>
+      <div class="repo-grid" id="repoGrid"></div>
+    </section>
+
+    <section class="section reveal" id="leadership">
+      <div class="section-heading">
+        <p class="eyebrow">Leadership</p>
+        <h2>Leadership & Activities</h2>
+      </div>
+      <div class="leadership-list">
+        <div><h3>Student Union <span>2022 - 2026</span></h3><p>Multiple leadership roles including General Manager, Logistics Head, Crisis Manager, and Treasurer. Organized major events including AUC Exotics, Cap’N’Gown, and El Mahata Cairokee Concert.</p></div>
+        <div><h3>Student Senate <span>2023 - 2024</span></h3><p>CSCE Senator representing Computer Science and Engineering students.</p></div>
+        <div><h3>Mashroo3 Kheir <span>2023</span></h3><p>Member of Bel Alwan 2023.</p></div>
+        <div><h3>3alRaseef <span>2024 - 2025</span></h3><p>Treasurer.</p></div>
+      </div>
+    </section>
+
+    <section class="section contact-section reveal" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p><strong>Phone:</strong> <a href="tel:+201066696903">+20 106 669 6903</a></p>
+        <p><strong>Email:</strong> <a href="mailto:adessouky@aucegypt.edu">adessouky@aucegypt.edu</a></p>
+        <p><strong>Address:</strong> New Cairo, Cairo, Egypt</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>Name<input type="text" id="name" placeholder="Your name" required minlength="2" /></label>
+        <label>Email<input type="email" id="email" placeholder="your@email.com" required /></label>
+        <label>Topic<select id="topic" required><option value="">Choose a topic</option><option>Internship Opportunity</option><option>Project Collaboration</option><option>Student Leadership</option><option>Other</option></select></label>
+        <label>Preferred Reply<input type="radio" name="reply" value="Email" checked /> Email <input type="radio" name="reply" value="Phone" /> Phone</label>
+        <label class="check-label"><input type="checkbox" id="consent" required /> I confirm the information is ready to be sent.</label>
+        <label>Message<textarea id="message" placeholder="Write your message" required minlength="10"></textarea></label>
+        <button type="submit" class="btn primary">Prepare Email</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <dialog id="projectDialog" class="project-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button>
+    <p class="eyebrow" id="dialogType"></p>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogDescription"></p>
+  </dialog>
+
+  <footer>
+    <p>© <span id="year"></span> Ahmed El Dessouky. Built as an AI-assisted web portfolio project.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
